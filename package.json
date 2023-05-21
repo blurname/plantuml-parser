@@ -1,11 +1,10 @@
 {
-  "name": "plantuml-parser",
+  "name": "@blurname/plantuml-parser",
   "version": "0.4.0",
   "description": "Parse PlantUML with JavaScript or TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "conf.js",
     "dist/**/*"
   ],
   "dependencies": {
@@ -45,9 +44,6 @@
     "ts-node": "^9.0.0",
     "ts-pegjs": "^0.2.7",
     "typescript": "^4.0.3"
-  },
-  "bin": {
-    "plantuml-parser": "dist/bin/cli.js"
   },
   "scripts": {
     "prepublishOnly": "git clean -f -f -d -x -e 'node_modules' && npm run build",
